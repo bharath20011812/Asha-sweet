@@ -55,6 +55,7 @@ li {
     font-size: 20px;
     color: #000000;
     list-style: none;
+    font-family: 'Poppins-Regular';
 }
 
 a,
@@ -357,7 +358,7 @@ section.categories-sec {
 
 /* Coprate Gifting */
 section.gifting-sec {
-    background: #FFF7F9;
+    background: #FBFBEA;
     padding-bottom: 40px;
 }
 img.gift-img {
@@ -407,6 +408,11 @@ section.our-story {
     padding: 50px 0 20px;
 }
 /* our Branch */
+section.our-branch {
+    background: #fff7f9;
+    margin: 30px 0;
+    padding: 0 0 50px;
+}
 .our-branch h3 {
     font-family: 'Poppins-bold';
     font-weight: 600;
@@ -451,6 +457,31 @@ section.our-story {
 
 .letter-img img {
     width: 100%;
+}
+.form-group input {
+    border: 0;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    padding: 10px;
+}
+.form-group input::placeholder {
+    font-family: 'Poppins-Regular';
+    text-transform: lowercase;
+}
+.letter-form button.btn {
+    background: #D31E43;
+    width: 100%;
+    margin-top: 12px;
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Poppins-Regular';
+    letter-spacing: 20px;
+    text-transform: uppercase;
+}
+.letter-form form{
+    padding-top: 10px;
 }
 /* collection page */
 
@@ -804,7 +835,7 @@ i.fa-brands.fa-facebook-f {
         background: #FDF4F6;
         padding: 15px;
         width: 49%;
-        max-width: 49%;
+        max-width: 100%;
         margin-bottom: 10px;
         text-align: center;
     }
@@ -844,7 +875,6 @@ i.fa-brands.fa-facebook-f {
     } */
     .asha-contact {
         justify-content: center;
-        gap: 10%;
     }
     .asha-contact>div {
         padding: 20px 10px;
@@ -912,7 +942,6 @@ i.fa-brands.fa-facebook-f {
     .asha-contact>div{
         width: 100%;
         margin-left: 0;
-        max-width: 100%;
     }
 
 }
