@@ -105,6 +105,48 @@ $('.branch-slider').owlCarousel({
   }
 })
 });
+// collection page
+$('.collect-category').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: false,
+  autoplay: false,
+  dots: false,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1.3
+    },
+    600: {
+      items: 3
+    },
+    1000: {
+      items: 3.5
+    }
+  }
+})
+
+// collection page
+$('.collect-Friendly').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: false,
+  autoplay: false,
+  dots: false,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1.3
+    },
+    600: {
+      items: 2
+    },
+    1000: {
+      items: 2.5
+    }
+  }
+})
+
 
 
 $('.moreless-button').click(function() {
@@ -115,3 +157,29 @@ $('.moreless-button').click(function() {
     $(this).text("Read Less")
   }
 });
+
+// count increment
+$(document).ready(function() {
+  const minus = $('.quantity__minus');
+  const plus = $('.quantity__plus');
+  const input = $('.quantity__input');
+  minus.click(function(e) {
+    e.preventDefault();
+    var value = input.val();
+    if (value > 1) {
+      value--;
+    }
+    input.val(value);
+  });
+  
+  plus.click(function(e) {
+    e.preventDefault();
+    var value = input.val();
+    value++;
+    input.val(value);
+  })
+});
+
+
+
+// left Product Image
