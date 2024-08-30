@@ -1366,7 +1366,7 @@ section.banner-sec {
 
 .friendly-collect {
     width: 34%;
-    background-image: url('/image/friendly-bg.png');
+    background-image: url('https://bharath20011812.github.io/Asha-sweet/image/friendly-bg.png');
     padding: 40px 50px 40px 80px;
 }
 
@@ -1720,7 +1720,7 @@ section.rating-review {
 @media screen and (max-width: 1200px) {
     .friendly-collect {
         width: 34%;
-        background-image: url(/image/friendly-bg.png);
+        background-image: url('https://bharath20011812.github.io/Asha-sweet/image/friendly-bg.png');
         padding: 40px 35px;
     }
     .friendly-collection h4 {
@@ -1749,7 +1749,7 @@ section.rating-review {
     }
 
     .friendly-collection {
-        background-image: url('/image/friendly-bg.png');
+        background-image: url('https://bharath20011812.github.io/Asha-sweet/image/friendly-bg.png');
     }
 
     .product-maincol {
