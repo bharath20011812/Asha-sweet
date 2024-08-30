@@ -147,7 +147,29 @@ $('.collect-Friendly').owlCarousel({
   }
 })
 
+// product page
+$('.rating-customer').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: false,
+  autoplay: false,
+  dots: true,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 2
+    }, 
+    1200: {
+      items: 3
+    }
+  }
+})
 
+
+// read more
 
 $('.moreless-button').click(function() {
   $('.moretext').slideToggle();
