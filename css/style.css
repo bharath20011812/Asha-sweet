@@ -28,7 +28,6 @@ html {
 }
 
 body {
-    font-family: 'Montserrat-Regular';
     color: #000000;
     margin: 0;
     padding: 0;
@@ -88,8 +87,8 @@ section {
 }
 
 .sub-heading {
-    font-family: 'Poppins-Bold';
-    font-weight: 600;
+    font-family: 'Poppins-bold';
+    font-weight: 700;
     padding: 50px 0;
     color: #1A1A1A;
 }
@@ -151,7 +150,7 @@ section.treat-sec {
 
 .collection-img .tiny-paratag {
     font-weight: 600;
-    font-family: 'Poppins-Bold';
+    font-family: 'Poppins-semibold';
     position: absolute;
     left: 0;
     right: 0;
@@ -161,6 +160,7 @@ section.treat-sec {
     padding: 50px 0 30px;
     color: #FFFFFF;
     font-size: 25px;
+    border-radius: 0 0px 10px 10px;
 }
 
 .collect-link {
@@ -175,6 +175,9 @@ section.treat-sec {
     font-weight: 600;
     color: #000;
     font-family: 'Poppins-Regular';
+}
+.treat-sec h3 {
+    padding-top: 0;
 }
 
 /* sec 3 Bestseller*/
@@ -233,15 +236,20 @@ section.treat-sec {
 
 .prod-detial .prod-name {
     font-weight: 500;
-    font-family: 'Poppins-bold';
+    font-family: 'Poppins-semibold';
+    height: 70px;
+    font-size: 20px;
 }
 
-.prod-detial .prod-rate {
+.prod-rate {
     color: #D31E43;
-    font-weight: 500;
-    font-family: 'Poppins-Regular';
+    font-weight: 600;
     font-size: 20px;
     margin-top: 10px;
+    font-family: ui-monospace;
+}
+.prod-rate span {
+    font-family: 'Poppins-SemiBold';
 }
 
 .sellr-product a {
@@ -354,10 +362,9 @@ section.categories-sec {
 }
 
 .catego-innr h4 {
-    margin: 30px;
-    font-family: 'Poppins-bold';
+    margin: 30px 0;
+    font-family: 'Poppins-semibold';
     font-weight: 600;
-    line-height: 14px;
     text-align: center;
 }
 
@@ -377,7 +384,6 @@ img.gift-img {
 
 .delivery-img img {
     width: 100%;
-    height: 400px;
 }
 
 .delivery-img {
@@ -413,18 +419,18 @@ img.gift-img {
 }
 
 .read-morestory h4 {
-    font-family: 'Poppins-bold';
+    font-family: 'Poppins-semibold';
     font-weight: 600;
     color: #484848;
 }
 
 .read-morestory {
     text-align: center;
-    padding: 50px 0 30px;
+    padding: 50px 10px 30px;
 }
 
 section.our-story {
-    padding: 50px 0 20px;
+    padding: 20px 0;
 }
 
 /* our Branch */
@@ -435,7 +441,7 @@ section.our-branch {
 }
 
 .our-branch h3 {
-    font-family: 'Poppins-bold';
+    font-family: 'Poppins-semibold';
     font-weight: 600;
     text-align: center;
     color: #484848;
@@ -544,6 +550,10 @@ section.our-branch {
     border-bottom: 1px solid;
     border-radius: 0;
     padding: 10px;
+    background: #FDF4F6;
+}
+.letter-form .sub-heading {
+    color: #484848;
 }
 
 .form-group input::placeholder {
@@ -605,11 +615,6 @@ section.news-letter {
         width: 50%;
     }
 
-    .delivery-img img {
-        width: 100%;
-        height: 300px;
-    }
-
     .branch-place {
         flex-wrap: wrap;
         flex-direction: column-reverse;
@@ -619,6 +624,9 @@ section.news-letter {
     .branch-img,
     .banch-infor iframe {
         width: 100%;
+    }
+    .categorie-main .catego-innr:last-child {
+        width: 60%;
     }
 
 }
@@ -638,6 +646,15 @@ section.news-letter {
 
     .desktop-none {
         display: none;
+    }
+    .story-main img {
+        object-fit: cover;
+        object-position: top;
+        width: 100%;
+        height: 200px;
+    }
+    .story-main {
+        padding: 5px;
     }
 
     .sub-heading {
@@ -717,17 +734,16 @@ section.news-letter {
     }
 
     .branch-slider button.owl-prev {
-        left: -5%;
+        left: -3%;
     }
 
     .branch-slider .owl-nav button {
         position: absolute;
         top: 50%;
     }
-
-    .delivery-img img {
-        width: 100%;
-        height: 200px;
+    
+    .prod-detial .prod-name {
+        height: 45px;
     }
 }
 
@@ -759,6 +775,10 @@ section.news-letter {
 
     .catego-innr h4 {
         font-size: 20px;
+    }
+    
+    .categorie-main .catego-innr:last-child {
+        width: 100%;
     }
 }
 
@@ -998,7 +1018,7 @@ section.footer {
     padding: 10px;
     border-radius: 20px;
     color: #fff;
-    margin-right: 3px;
+    margin-right: 8px;
 }
 
 .footer-follow i.fa-brands.fa-facebook-f {
@@ -1027,6 +1047,12 @@ section.footer {
     text-align: center;
     padding-top: 30px;
     font-family: 'Poppins-Regular';
+}
+.col-lg-5.letter-img {
+    padding: 0;
+}
+.col-lg-7.letter-form {
+    background: #FDF4F6;
 }
 
 @media screen and (max-width: 1100px) {
@@ -1104,6 +1130,15 @@ section.footer {
 
     .asha-contact>div {
         padding: 20px 10px;
+    }
+    .footer-follow li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footer-follow li a span{
+        width: 100%;
     }
 
 }
@@ -1285,6 +1320,7 @@ section.banner-sec {
 
 .product-maincol img {
     width: 100%;
+    border-radius: 8px;
 }
 
 .product-maincol {
@@ -1308,28 +1344,30 @@ section.banner-sec {
     background: #FCFBEA;
 }
 
-.price-collect h5,
+.price-collect h5{
+    font-family: 'Poppins-SemiBold';
+    padding: 15px 0;
+    height: 65px;
+}
+
 .friendly-collection h5 {
     font-family: 'Poppins-SemiBold';
     padding: 15px 0;
-}
-
-.price-collect p {
-    color: #D31E43;
-    font-family: 'Poppins-SemiBold';
+    height: 70px;
 }
 
 .price-collect .add-cart {
     text-align: center;
     background: #D31E43;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 3px;
 }
 
 .price-collect .add-cart a {
     color: #fff;
     font-family: 'Poppins-regular';
+    font-size: 20px;
 }
 
 .collect-category .item h5 {
@@ -1367,7 +1405,7 @@ section.banner-sec {
 
 .friendly-collect {
     width: 34%;
-    background-image: url('https://bharath20011812.github.io/Asha-sweet/image/friendly-bg.png');
+    background-image: url('/image/friendly-bg.png');
     padding: 40px 50px 40px 80px;
 }
 
@@ -1381,11 +1419,23 @@ section.banner-sec {
     text-transform: capitalize;
 }
 
-.collect-Friendly .item img {
-    background: #F0F0F0;
-    padding: 20px;
+.filter-prodt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
-
+.filter-prodt .form-select option{
+    color: #000;
+}
+.filter-prodt .form-select {
+    width: 15%;
+    border-radius: 0;
+    border: 2px solid;
+    color: #000;
+    font-family: 'Poppins-SemiBold';
+    padding: 10px;
+}
 /* Product Detial Page */
 .productbanner-sec {
     margin-top: 60px;
@@ -1664,9 +1714,15 @@ section.rating-review {
 }
 
 .rating-customer .item p {
-    color: #475467
+    color: #475467;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    position: relative;
+    z-index: 99;
 }
-
 .rating-customer .item {
     padding: 20px;
     border: 1px solid #D0D5DD;
@@ -1686,7 +1742,7 @@ section.rating-review {
 }
 
 .client-review .custom-img {
-    width: 30% !important;
+    width: 20% !important;
 }
 
 .rating-customer .owl-dots {
@@ -1697,6 +1753,7 @@ section.rating-review {
     display: flex;
     align-items: center;
     gap: 8px;
+    width: 70%;
 }
 
 .rating-review .write-review {
@@ -1716,6 +1773,8 @@ section.rating-review {
 
 .write-star h2 {
     font-family: 'Poppins-SemiBold';
+    color: #1D2939;
+    margin-bottom: 10px;
 }
 
 .product-shaman {
@@ -1754,13 +1813,32 @@ section.rating-review {
 .social-product ul li i.fa-brands.fa-facebook-f {
     padding: 10px 4px;
 }
-
-
+#pagination-container ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+span.current.prev ,a.page-link.next{
+    color: #D31E43;
+    font-size: 24px;
+}
+.simple-pagination .current {
+    color: #FFF;
+    background-color:#D31E43;
+    border-color: #FF7182;
+    padding: 7px 15px;
+    border-radius: 50px;
+}
+.simple-pagination .prev.current, .simple-pagination .next.current {
+    background: transparent;
+    padding: 0;
+}
 
 @media screen and (max-width: 1200px) {
     .friendly-collect {
         width: 34%;
-        background-image: url('https://bharath20011812.github.io/Asha-sweet/image/friendly-bg.png');
+        background-image: url(/image/friendly-bg.png);
         padding: 40px 35px;
     }
 
@@ -1790,7 +1868,7 @@ section.rating-review {
     }
 
     .friendly-collection {
-        background-image: url('https://bharath20011812.github.io/Asha-sweet/image/friendly-bg.png');
+        background-image: url('/image/friendly-bg.png');
     }
 
     .product-maincol {
@@ -1812,6 +1890,14 @@ section.rating-review {
         margin-top: 30px;
     }
 
+    .price-collect h5 {
+        font-family: 'Poppins-SemiBold';
+        padding: 15px 0;
+        font-size: 18px;
+    }
+    .filter-prodt .form-select {
+        width: 38%;
+    }
 
 
 }
@@ -1825,7 +1911,6 @@ section.rating-review {
     .write-star h2 {
         font-size: 25px;
     }
-
     .right-review a {
         background: #D31E43;
         color: #fff;
@@ -1874,6 +1959,12 @@ section.rating-review {
     .product-maincont button.btn.personlis-btn {
         font-size: 16px;
     }
+    .price-collect .add-cart {
+        padding: 5px;
+    }
+    .price-collect .add-cart a {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -1907,11 +1998,21 @@ section.rating-review {
     .friendly-collection h5 {
         font-size: 16px;
     }
+    .price-collect h5 {
+        font-size: 14px;
+    }
+    .collect-Friendly .item {
+        padding: 10px;
+    }
+    
 }
 
 @media screen and (max-width: 350px) {
     .price-collect h4 {
         font-size: 12px;
+    }
+    .filter-prodt .form-select {
+        width: 48%;
     }
 
     .footer-follow li a {
@@ -1927,5 +2028,12 @@ section.rating-review {
     .right-review a {
         padding: 10px 10px;
         font-size: 12px;
+    }
+    .product-maincol {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .price-collect h5 {
+        font-size: 18px;
     }
 }
