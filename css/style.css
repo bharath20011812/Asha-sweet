@@ -329,7 +329,8 @@ section.categories-sec {
     color: #fff;
     font-family: 'Poppins-Regular';
     font-weight: 500;
-    padding: 5px;
+    padding: 10px;
+    font-size: 18px;
 }
 
 .categorie-main .catego-innr {
