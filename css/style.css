@@ -1614,7 +1614,9 @@ h5.prod-price span {
     width: 5%;
     margin-right: 10px;
 }
-
+.tiny-paratag ul {
+    padding-left: 0;
+}
 /* faq */
 .product-maincont .static__content {
     width: 100%;
