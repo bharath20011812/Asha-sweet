@@ -1057,6 +1057,11 @@ section.footer {
     background: #FDF4F6;
 }
 
+@media screen and (max-width: 1250px) {
+.footer-follow li a {
+    font-size: 13px;
+}
+}
 @media screen and (max-width: 1100px) {
     .asha-contact>div {
         background: #FDF4F6;
@@ -1066,6 +1071,9 @@ section.footer {
         margin-bottom: 10px;
         text-align: center;
         flex: unset;
+    }
+    .footer-follow li a {
+        font-size: 16px;
     }
 
     .main-head .nav-item {
