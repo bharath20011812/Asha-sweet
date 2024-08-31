@@ -1548,7 +1548,7 @@ h5.prod-price span {
 
 .product-moredeti select.form-select {
     border: 0;
-    background: #F2F4F7;
+    background-color: #F2F4F7;
     border-radius: 0;
     padding: 10px;
     text-align: center;
