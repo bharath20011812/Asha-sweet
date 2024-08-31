@@ -1614,8 +1614,16 @@ h5.prod-price span {
     width: 5%;
     margin-right: 10px;
 }
-.tiny-paratag ul {
-    padding-left: 0;
+.tiny-paratag ul li{
+    position: relative;
+}
+.tiny-paratag ul li::before {
+    position: absolute;
+    content: '•';
+    width: 20px;
+    height: 20px;
+    left: -20px;
+    font-size: 25px;
 }
 /* faq */
 .product-maincont .static__content {
