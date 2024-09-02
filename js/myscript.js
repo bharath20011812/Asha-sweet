@@ -51,8 +51,9 @@ $('.best-seller').owlCarousel({
   autoplayHoverPause: true,
   responsive: {
     0: {
-      items: 2
+      items: 1.5
     },
+    
     768: {
       items: 2
     },
@@ -143,6 +144,28 @@ $('.collect-Friendly').owlCarousel({
     },
     1000: {
       items: 2.5
+    }
+  }
+})
+
+// cart
+
+$('.cart-Friendly').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: false,
+  autoplay: false,
+  dots: false,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1.3
+    },
+    767: {
+      items: 3
+    },
+    1200: {
+      items: 4
     }
   }
 })
