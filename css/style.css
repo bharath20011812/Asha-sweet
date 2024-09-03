@@ -1994,6 +1994,18 @@ section.cart-totmain {
     font-size: 28px;
 }
 
+.cart-othercat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-othercat a {
+    color: #D31E43;
+    text-decoration: underline;
+}
+
+
 /* checkout */
 section.checkout-main {
     margin-top: 5rem;
@@ -2618,6 +2630,10 @@ section.checkout-main {
     .delivery-address {
         padding: 30px 20px;
     }
+    
+    .total-amount .total-detail p {
+        font-size: 12px;
+    }
 
 }
 
@@ -2666,11 +2682,6 @@ section.checkout-main {
     .cart-product .product-cartinfo {
         width: 100%;
     }
-
-    .total-amount .total-detail p {
-        font-size: 13px;
-    }
-
     .delivery-address {
         padding: 20px 15px;
     }
