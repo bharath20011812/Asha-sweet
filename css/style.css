@@ -221,7 +221,7 @@ section.treat-sec {
     text-align: center;
     right: 0;
     left: 0;
-    bottom: 10px;
+    bottom: -5px;
     background: #D31E43;
     border-radius: 5px;
     padding: 10px;
@@ -229,6 +229,8 @@ section.treat-sec {
     font-weight: 500;
     font-family: 'Poppins-Regular';
     transition: 0.3s;
+    width: 95%;
+    margin: auto;
 }
 
 .prod-detial {
